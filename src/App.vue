@@ -18,7 +18,7 @@ const getIconName = computed(() => {
     : "system-uicons:menu-hamburger";
 });
 
-const manuOpen = () => {
+const opneMenu = () => {
   return (open.value = !open.value);
 };
 </script>
@@ -34,7 +34,7 @@ const manuOpen = () => {
       <h1>Designer</h1>
     </div>
     <span
-      @click="manuOpen"
+      @click="opneMenu"
       class="absolute md:hidden right-6 top-2 cursor-pointer"
     >
       <Icon :icon="getIconName" class="text-4xl text-white" />
